@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../stylesheets/commonStyles.scss';
 import '../../../stylesheets/login.scss';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 
 function InsuranceLogin() {
   let url = '/insurance-dashboard';
@@ -14,10 +14,10 @@ function InsuranceLogin() {
     <div className='main_container_login'>
       <div className='txt_c padt_85 dfx'>
         <img
-          src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png'
+          src='https://static-assets-goparts.s3.amazonaws.com/demo-static-images/huk_logo.svg'
           className='logo_size mr_10'
         />
-        <span className='theme_clr fs_30 ls_1'>Versicherung</span>
+        <span className='clr_262626 fs_18 ls_1'>Versicherung</span>
       </div>
       <div className='sign_in_cont fs_30 mart_50'>
         <div className='signin_txt cb_262626'>Anmelden</div>
