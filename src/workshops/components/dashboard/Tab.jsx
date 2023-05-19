@@ -3,7 +3,7 @@ import DashboardTable from "./DashboardTable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSort } from "@fortawesome/free-solid-svg-icons";
 import PaginationRow from "./PaginationRow";
-
+ 
 export default function Tab(props) {
   const {
     jobId,
@@ -25,6 +25,8 @@ export default function Tab(props) {
     name2,
     title2,
   } = props.tab.table2;
+
+console.log('props', props);
 
   return (
     <div>

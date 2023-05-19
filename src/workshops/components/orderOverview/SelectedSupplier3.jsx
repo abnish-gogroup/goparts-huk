@@ -15,7 +15,7 @@ function SelectedSupplier3(props) {
           <div className="supplier_txt">
           {supplierName}
           </div>
-          <div>{supplierId}</div>
+          <div className='clr_262626'>{supplierId}</div>
         </div>
         <div className="address_details_cont_selected">
           <div className="w_330">

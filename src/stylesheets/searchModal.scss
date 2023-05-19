@@ -55,23 +55,23 @@
 }
 
 .suche {
-  border: 1px solid #1e8ea5;
+  border: 1px solid #262626;
   border-radius: 3px;
-  background-color: #1E8EA5;
-  color: #fff;
+  background-color: #262626;
+  color: #F9DF49;
   padding: 2px 25px;
   &:hover {
     background-color: #fff;
-    color: #1e8ea5;
+    color: #262626;
   }
 }
 
 .close_icon {
   float: right;
   font-size: 18px;
-  color: #1e8ea5;
+  color: #262626;
   background: transparent;
-  border: 1px solid #1e8ea5;
+  border: 1px solid #262626;
   border-radius: 4px;
   width: 30px;
   text-align: center;

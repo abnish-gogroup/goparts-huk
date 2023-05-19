@@ -16,9 +16,9 @@
 }
 
 .parts_order_btn {
-  background-color: #A155B9;
-  color: #fff;
-  border: 1px solid #A155B9;
+  background-color: #262626;
+  color: #F9DF49;
+  border: 1px solid #262626;
   border-radius: 5px;
   font-size: 14px;
   height: 36px;
@@ -26,8 +26,8 @@
   cursor: pointer;
   &:hover {
     background-color: #fff;
-    border: 1px solid #A155B9;
-    color: #A155B9;
+    border: 1px solid #262626;
+    color: #262626;
   }
 }
 
@@ -40,10 +40,10 @@
 }
 
 .parts_selection_desc_text {
-  background: #1e8ea5;
-  color: #fff;
+  background: #F9DF49;
+  color: #262626;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 10px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
@@ -246,8 +246,8 @@ ul.accordion-list-parts-selection {
 }
 
 .dropdown-content>.ddc:hover {
-  background-color: #1e8ea5;
-  color: #fff;
+  background-color: #F9DF49;
+  color: #262626;
 }
 
 .dropdown:hover .dropdown-content {

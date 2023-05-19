@@ -30,9 +30,9 @@ function Header(props) {
   return (
     <div>
       <nav className={expanded ? 'navbar navbar-fixed-top' : 'navbar navbar-fixed-top-collapse'}>
-        <div className='top_navbar'>
-          <img src='https://d3brnpc5nhvc9v.cloudfront.net/site/static-images/goparts-logo.png' className='logo' onClick={handleGoToIndexPage} />
-          <span className='theme_clr fs_18 ls_1 pdl_10'>  {getHeaderName(window.location.pathname)}</span>
+        <div className='top_navbar'> 
+          <img src='https://static-assets-goparts.s3.amazonaws.com/demo-static-images/huk_logo.svg' className='brand_logo' onClick={handleGoToIndexPage} />
+          <span className='fs_14 ls_1 pdl_10'>  {getHeaderName(window.location.pathname)}</span>
         </div>
         <div className='right_navbar'>
           <div className="position-relative">

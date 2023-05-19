@@ -336,6 +336,6 @@ export function getHeaderName(pathname){
       return 'Versicherung';
     }
     else{
-      return 'Werkstatt';     
+      return 'Werkstatt';
     }
 }

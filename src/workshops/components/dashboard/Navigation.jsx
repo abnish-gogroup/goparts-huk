@@ -6,7 +6,7 @@ export default function Navigation(props) {
     <ul className={`tabs__nav`}>
       {props.tabs.map((item) => (
         <li key={item.jobId} className={`tabs__item`}>
-          <button className={`tabs__button ${(props.activeTabId === item.jobId) ? 'active' : ''}`}
+          <button className={`tabs__button ${(props.activeTabId === item.jobId) ? 'active fw_600' : ''}`}
             onClick={() => props.onNavClick(item.jobId)}>
             {item.name}
           </button>

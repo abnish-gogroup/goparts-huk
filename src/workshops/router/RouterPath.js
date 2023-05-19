@@ -16,6 +16,7 @@ import InsuranceDashboard from '../../insurance/components/dashboard/InsuranceDa
 import OrderProcess from '../../insurance/components/orderProcess/OrderProcess';
 import ProtectedRoute from './ProtectedRoute';
 import PageNotFound from './PageNotFound';
+import SteeringTool from '../components/steeringTool/SteeringTool';
 
 export default function RouterPath() {
 
@@ -35,6 +36,7 @@ export default function RouterPath() {
       <Route path='/insurance-login' element={<ProtectedRoute Component={InsuranceLogin} />} />
       <Route path='/insurance-dashboard' element={<ProtectedRoute Component={InsuranceDashboard} />} />
       <Route path='/insurance-order-process' element={<ProtectedRoute Component={OrderProcess} />} />
+      <Route path='/steering-tool' element={<ProtectedRoute Component={SteeringTool} />} />
       <Route path='*' element={<PageNotFound />} />
     </Routes>
   )
