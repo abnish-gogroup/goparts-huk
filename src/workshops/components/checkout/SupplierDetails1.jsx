@@ -10,10 +10,12 @@ import { faCalendar } from '@fortawesome/free-solid-svg-icons';
 function SupplierDetails1(props) {
   const { supplierName, suppAddsName, supplierCity, supplierPhoneNo, supplierEmail, radioBtnName, radioBtnTime } = props;
   const [startDate, setStartDate] = useState(null);
-  return ( 
+  return (
     <div className='supplier_cont'>
       <div className="supplier_card">
-        <div className="supplier_txt">{supplierName}</div>
+      <div className='bg_f9df49 pd_1020'>
+          <div className="supplier_txt">{supplierName}</div>
+        </div>
         <div className="address_details_cont">
           <div className="w_330 mrt_20">
             <div className="col_262626 fw_600">Kontakt:</div>
