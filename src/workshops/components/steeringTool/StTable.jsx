@@ -2,11 +2,8 @@ import React from "react";
 // import $ from "jquery";
 import "../../../stylesheets/dashboardDropdown.scss";
 import "../../../stylesheets/dashboard.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function StTable(props) {
-    console.log('props', props);
   const {
     stId,
     insuranceCont,
@@ -22,8 +19,7 @@ export default function StTable(props) {
     <>
       <div className="job_row_cont">
         <div className="job_row_class">
-          <div className="w_3">
-          </div>
+          <div className="w_3"></div>
           {/* <div className="w_10">{stId}</div> */}
           <div className="w_25">{insuranceCont} </div>
           <div className="w_15 fw_600">{ageOfCar}</div>

@@ -3,7 +3,7 @@ import '../stylesheets/sidebar.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faDashboard, faGear, faList, fasteering } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faDashboard, faGear, faList, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import Header from '../common/Header';
 
 function Sidebar(props) {
@@ -56,7 +56,7 @@ function Sidebar(props) {
 								<li className="menu-item" onClick={goToDashboard}><FontAwesomeIcon icon={faDashboard} className='icon' />Dashboard</li>
 								<li className="menu-item" onClick={goToCreateJob}><FontAwesomeIcon icon={faList} className='icon' />Aufträge</li>
 								<li className="menu-item"><FontAwesomeIcon icon={faGear} className='icon' />Einstellungen</li>
-								<li className="menu-item" onClick={goToSteeringTool}><FontAwesomeIcon icon={faGear} className='icon' />steuerungsmodul</li>
+								<li className="menu-item" onClick={goToSteeringTool}><FontAwesomeIcon icon={faSlidersH} className='icon' />steuerungsmodul</li>
 							</ul>}
 					</div>
 				</nav>

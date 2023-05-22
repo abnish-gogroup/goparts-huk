@@ -1,29 +1,31 @@
 .steering_table_head {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #F9DF49;
-    display: flex;
-    background-color: #F9DF49;
-    border-radius: 3px;
-    color: #262626;
-    font-size: 12px;
-    text-transform: uppercase;
-    align-items: center;
-    padding: 0 10px;
-    font-weight: 600;
-  }
+  width: 100%;
+  height: 40px;
+  border: 1px solid #F9DF49;
+  display: flex;
+  background-color: #F9DF49;
+  border-radius: 3px;
+  color: #262626;
+  font-size: 12px;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 0 10px;
+  font-weight: 600;
+}
 
-//   .fw_600 {
-//     font-weight: 600;
-//   }
+.tab_btn {
+  border: none;
+  background-color: transparent;
+  margin-right: 10px;
+}
 
-//   .bg_1e8ea5 {
-//     background-color: #1e8ea5;
-//   }
+.bdr_1 {
+  border-bottom: 2px solid #1e8ea5;
+}
 
-  .asd {
-    background-color: #1e8ea5;
-    color: #fff;
-    font-weight: 600;
-    height: 40px;
-  }
+.asd {
+  background-color: #1e8ea5;
+  color: #fff;
+  font-weight: 600;
+  height: 40px;
+}
