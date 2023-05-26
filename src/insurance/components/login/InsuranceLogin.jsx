@@ -14,7 +14,7 @@ function InsuranceLogin() {
     <div className='main_container_login'>
       <div className='txt_c padt_85 dfx'>
         <img
-          src='https://static-assets-goparts.s3.amazonaws.com/demo-static-images/huk_logo.svg'
+          src='http://demo-goparts-static-assets.s3-ap-southeast-2.amazonaws.com/static-assets-huk/huk-logo.svg'
           className='logo_size mr_10'
         />
         <span className='clr_262626 fs_18 ls_1'>Versicherung</span>
