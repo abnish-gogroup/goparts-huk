@@ -4,6 +4,7 @@ import '../../stylesheets/commonStyles.scss';
 import '../../stylesheets/login.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { Dropdown } from 'react-bootstrap';
 
 function Login() {
   const [userCred, setUserCred] = useState({ userName: '', password: '' });
@@ -11,6 +12,7 @@ function Login() {
   const [isError, setIsError] = useState({ userName: false, password: false });
   const userLoginDetails = { userName: 'goparts', password: 'goparts@543&' };
   const navigate = useNavigate();
+  const [selectedValue, setSelectedValue] = useState('');
 
   useEffect(() => {
     if (localStorage.getItem('loginDetails')) {
@@ -50,8 +52,12 @@ function Login() {
     setIsEye(!isEye);
   }
 
+  const handleSelect = (eventKey) => {
+    setSelectedValue(eventKey);
+  };
+
   return (
-    <div className='main_container_login'> 
+    <div className='main_container_login'>
       <div className='txt_c padt_85 dfx'>
         <img
           src='http://demo-goparts-static-assets.s3-ap-southeast-2.amazonaws.com/static-assets-huk/huk-logo.svg'
@@ -85,6 +91,16 @@ function Login() {
               {isEye ? <FontAwesomeIcon icon={faEye} onClick={handleTogglePassword} className='eye_style' /> : <FontAwesomeIcon icon={faEyeSlash} onClick={handleTogglePassword} className='eye_style' />}
             </div>
           </div>
+          <Dropdown onSelect={handleSelect} value={selectedValue} className="dropdown-container">
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              {selectedValue || 'Workshop'}
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item eventKey="Workshop">Workshop</Dropdown.Item>
+              <Dropdown.Item eventKey="Insurance">Insurance</Dropdown.Item>
+              <Dropdown.Item eventKey="Parts Dealer">Parts Dealer</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <small
             className='forgot_password cp fs_12 theme_clr'>
             Passwort vergessen?

@@ -159,3 +159,18 @@ body {
   font-size: 12px;
   text-align: center;
 }
+
+.dropdown-container {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  width: 100%;
+
+  .btn-secondary,
+  .show {
+    width: 100%;
+  }
+
+  .btn-secondary {
+    background-color: #1e8ea5;
+  }
+}
